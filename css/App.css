@@ -297,3 +297,12 @@ footer a:hover {
     font-size: 80%;
   }
 }
+
+@media screen and(max-width: 420px) {
+  .header-title h1 {
+    font-size: 0.5rem;
+  }
+  .navbar {
+    font-size: 10px;
+  }
+}
