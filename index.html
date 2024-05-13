@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ibnu's Portfolio</title>
     <link rel="stylesheet" href="css/App.css" />
+    <script src="HireMe.js"></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,11 +12,19 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <!-- CDN Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
-      <div>
-        <h1>IBNU PORTFOLIO</h1>
+      <div class="header-title">
+        <h1>IBNU'S PROJECTS</h1>
       </div>
       <nav class="navbar">
         <ul>
@@ -24,17 +33,43 @@
           <li><a href="#nife">NIFE</a></li>
         </ul>
       </nav>
+      <div class="header-profile">
+        <ul>
+          <li>
+            <div class="header-img">
+              <a href="https://github.com/gelaws-hub">
+                <img
+                  src="img/Me.jpg"
+                  alt="Ibnu Fadhil aka vid_designer on Fiverr"
+                />
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/ibnufadhil_3d/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </header>
+
     <main>
       <div id="content">
         <article id="pen">
           <h1>Inkwell Fusion Pro</h1>
-          <div>
-            <img
-              class="article-image"
-              src="img/pen1.jpg"
-              alt="Inkwell Fusion Pro Pen"
-            />
+          <div class="article-image">
+            <video
+              width="your_width"
+              height="your_height"
+              autoplay
+              loop
+              muted
+              controls="none"
+            >
+              <source src="video/Pen 3D Animation.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
           <p>
             Experience the mesmerizing beauty of technology in my latest 3D
@@ -58,7 +93,7 @@
             simply someone who appreciates the finer things in life, this
             product showcase is not to be missed.
           </p>
-          <div>
+          <div class="see-project">
             <a
               href="https://www.fiverr.com/users/vid_designer/portfolio/NjNlMjcwNzE5MmE3MDQwMDAxNTMzYjk5"
               >See this project</a
@@ -67,12 +102,8 @@
         </article>
         <article id="earbuds">
           <h1>CHXRGE Earbuds Product</h1>
-          <div>
-            <img
-              class="article-image"
-              src="img/buds.png"
-              alt="CHXRGE Earbuds"
-            />
+          <div class="article-image">
+            <img src="img/buds.png" alt="CHXRGE Earbuds" />
           </div>
           <p>
             As a freelance 3D designer, I had the pleasure of working on an
@@ -98,7 +129,7 @@
             with this project and providing me with the opportunity to showcase
             my skills
           </p>
-          <div>
+          <div class="see-project">
             <a
               href="https://www.fiverr.com/users/vid_designer/portfolio/NjNlZWUzMjVjMTg1YWUwMDAxNmM0NDQw"
               >See this project</a
@@ -107,9 +138,17 @@
         </article>
         <article id="nife">
           <h1>Some NIFE Renders</h1>
-          <div>
-            <img class="article-image" src="img/knife.png" alt="NIFE Renders" />
-          </div>
+          <video
+            width="your_width"
+            height="your_height"
+            autoplay
+            loop
+            muted
+            controls="none"
+          >
+            <source src="video/Knife Animation.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
           <p>
             The knife embodies a sleek fusion of modern aesthetics and timeless
             functionality, designed to captivate both the eye and the hand.
@@ -134,7 +173,7 @@
             blade stands as a testament to the marriage of form and function,
             inviting admiration from all who behold it.
           </p>
-          <div>
+          <div class="see-project">
             <a href="https://www.instagram.com/p/CvehDk8yPgg/?img_index=1"
               >See this project</a
             >
@@ -142,11 +181,37 @@
         </article>
       </div>
       <aside>
-        <h2>About Me</h2>
-        <div><img class="profile-image" src="https://avatars.githubusercontent.com/u/73326654?v=4" alt="Ibnu Fadhil aka vid_designer on Fiverr" /></div>
-        <p>Hi there! I'm Ibnu Fadhil, a professional 3D product designer with over 6 years of experience. I create high-quality, visually appealing designs that bring products to life. With proficiency in various 3D software and techniques, I can make your vision a reality. Whether you need a product prototype, packaging design, or concept visualization, I'm dedicated to delivering exceptional results. I have a keen eye for detail and a passion for design, ensuring that each project is completed with precision and excellence. let's work together to make your next project a success!</p>
-        <button type="button" href="https://www.fiverr.com/vid_designer" >Hire Me</button>
+        <div class="aside-profile">
+          <h2>About Me</h2>
+          <div>
+            <img
+              class="profile-image"
+              src="img/Me.jpg"
+              alt="Ibnu Fadhil aka vid_designer on Fiverr"
+            />
+          </div>
+          <p>
+            Hi there! I'm Ibnu Fadhil, a professional 3D product designer with
+            over 6 years of experience. I create high-quality, visually
+            appealing designs that bring products to life. I have a keen eye for
+            detail and a passion for design, ensuring that each project is
+            completed with precision and excellence. let's work together to make
+            your next project a success!
+          </p>
+          <button
+            type="button"
+            href="https://www.fiverr.com/vid_designer"
+            id="sendMessageBtn"
+          >
+            Hire Me
+          </button>
+        </div>
       </aside>
     </main>
+    <footer>
+      <a href="https://www.instagram.com/ibnufadhil_3d/">
+        <p>&copy; Creation of Ibnu Fadhil 2024</p>
+      </a>
+    </footer>
   </body>
 </html>
